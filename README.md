@@ -67,6 +67,6 @@ Remember that it is also possible to have an error in the implementation of the 
 
 For each of the below, the proof certificate for each problem should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
 
-4) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.equals`.  
+6) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.equals`.  
 
-5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hastable.LlHashTable.remove`. 
+7) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hastable.LlHashTable.remove`. 
