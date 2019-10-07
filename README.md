@@ -17,7 +17,7 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 ## MC/DC Coverage
 
-1) **(15 points)** Write a minimal number of testes to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDcTest.f`. Justify the final set of tests in the comments.
+1) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDcTest.f`. Justify the final set of tests in the comments.
 
 2) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.MergeSortMcDcTest.sort`. Justify the final set of tests in the comments.
 
@@ -65,7 +65,7 @@ Remember that it is also possible to have an error in the implementation of the 
 
 ## Type Checking
 
-For each of the below, the proof certificate for each problem should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Scanning a paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
+For each of the below, the proof certificate for each problem should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
 
 4) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.equals`.  
 
