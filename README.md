@@ -32,9 +32,9 @@ For each of the following classes, implement functions that generate input for t
    
 Grading is based on the diversity of tests generated with the above techniques.
 
-3) **(15 points)** [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in *homework-support/src/test/java/pbt/BinarySearchTest*. 
+3) **(15 points)** [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in *edu.byu.cs329.pbt.stateless.BinarySearchTest*. 
 
-4) **(15 points)** [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in *homework-support/src/test/java/pbt/MergeSortTest*.
+4) **(15 points)** [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in *edu.byu.cs329.pbt.stateless.MergeSortTest*.
 
 ## Stateful PBT
 
@@ -61,7 +61,9 @@ put(Ka,Va), put(Kb,Vb) <==> put(Kb,Vb), put(Ka, Va) iff Ka != Kb
 
 These statements are equivalent in that `(Ka,Va)` and `(Kb,Vb)` are in the hash table no matter which set of statements are run.
 
-Remember that it is also possible to have an error in the implementation of the property rather than the class under test! 
+Remember that it is also possible to have an error in the implementation of the property rather than the class under test!
+
+Write an stateful PBT for the hashtable. Be sure to include each approach: point-wise comparison and equivalent statements. 
 
 ## Type Checking
 
