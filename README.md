@@ -38,7 +38,7 @@ Grading is based on the diversity of tests generated with the above techniques.
 
 ## Stateful PBT
 
-5) **(20 points)** This problem is to test an implementation of a hash table which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different be equivalent statements:
+5) **(20 points)** This problem is to test an implementation of a hash table which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different but equivalent statements:
 
 ```java
 prefix = randomActions();
