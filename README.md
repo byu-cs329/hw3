@@ -23,22 +23,21 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 ## Stateless PBT
 
-For each of the following classes, implement functions that generate input for test cases and write the properties that should be tested. Run the tests as **parameterized tests in JUnit 5**. **Report and fix** any errors you find. Consider any of the following for creating tests with random input:
+3) **(15 points)** For one of the following classes, implement functions that generate random input for test cases and oracles to check outputs. Run the random tests as **parameterized tests in JUnit 5**. **Report and fix** any errors you find. Consider any of the following for creating tests:
 
   * Assert any ensures from the specification on the output (post-conditions holds)
   * Check for runtime exceptions (it did something unexpected)
   * Assert a point-wise equivalence to some *gold-standard* implementation (compare with a perfect oracle)
   * Check for algebraic properties (e.g. inverse, etc.)
-   
-Grading is based on the diversity of tests generated with the above techniques.
 
-3) **(15 points)** [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in *edu.byu.cs329.pbt.stateless.BinarySearchTest*. 
+Choose one class to test:
 
-4) **(15 points)** [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in *edu.byu.cs329.pbt.stateless.MergeSortTest*.
+  * [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in *edu.byu.cs329.pbt.stateless.BinarySearchTest*. 
+  * [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in *edu.byu.cs329.pbt.stateless.MergeSortTest*.
 
 ## Stateful PBT
 
-5) **(20 points)** This problem is to test an implementation of a hash table which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different be equivalent statements:
+4) **(20 points)** This problem is to test an implementation of a hash table which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different but equivalent statements:
 
 ```java
 prefix = randomActions();
@@ -63,12 +62,12 @@ These statements are equivalent in that `(Ka,Va)` and `(Kb,Vb)` are in the hash 
 
 Remember that it is also possible to have an error in the implementation of the property rather than the class under test!
 
-Write an stateful PBT for the hashtable. Be sure to include each approach: point-wise comparison and equivalent statements. 
+Write an stateful PBT for the `edu.byu.cs329.hashtable.LLHashTable`. Be sure to include each approach: point-wise comparison and equivalent statements. 
 
 ## Type Checking
 
-For each of the below, the proof certificate for each problem should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
+5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.get`. The proof should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
 
-6) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.equals`.  
+## Optional
 
-7) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hastable.LlHashTable.remove`. 
+Practice writing type proofs for  `edu.byu.cs329.hashtable.LlHashTable.equals` and `edu.byu.cs329.hastable.LlHashTable.remove`. 
