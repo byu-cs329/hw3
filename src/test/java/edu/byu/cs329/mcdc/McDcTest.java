@@ -13,7 +13,7 @@ public class McDcTest {
     }
 
     int m = (from + to) / 2;
-    int[] left = sort(array, from, m - 1);
+    int[] left = sort(array, from, m);
     int[] right = sort(array, m + 1, to);
 
     int[] result = new int[left.length + right.length];
