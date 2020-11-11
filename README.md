@@ -17,13 +17,13 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 ## MC/DC Coverage
 
-1) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDcTest.f`. Justify the final set of tests in the comments.
+1) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDcTest.f`. Justify the final set of tests in the comments. Look it the `src/test` direction for the code to test. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition.
 
-2) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.MergeSortMcDcTest.sort`. Justify the final set of tests in the comments.
+2) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.MergeSortMcDcTest.sort`. Justify the final set of tests in the comments. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition (e.g., the if-statement in the loop). What makes this problem hard is finding the inputs to exercise the needed condition values for the if-statement in the loop. Find the needed condition values, then find the input to give those values.
 
 ## Stateless PBT
 
-3) **(15 points)** For one of the following classes, implement functions that generate random input for test cases and oracles to check outputs. Run the random tests as **parameterized tests in JUnit 5**. **Report and fix** any errors you find. Consider any of the following for creating tests:
+3) **(15 points)** For one of the following classes, implement functions that generate random input for test cases and oracles to check outputs. Run the random tests as **parameterized tests in JUnit 5**. **Report and fix** any defects you find. Consider any of the following for creating tests:
 
   * Assert any ensures from the specification on the output (post-conditions holds)
   * Check for runtime exceptions (it did something unexpected)
@@ -37,7 +37,7 @@ Choose one class to test:
 
 ## Stateful PBT
 
-4) **(20 points)** This problem is to test an implementation of a hash table which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different but equivalent statements:
+4) **(20 points)** This problem is to test an implementation of a map which uses [separate chaining](https://en.wikipedia.org/wiki/Hash_table) with linked lists. As discussed in class, a point-wise comparison with an oracle is one possible way to test. Another approach is to compare two objects created with different but equivalent statements. In pseudo code it goes as follows assuming that `command1` and `command2` are different but equivalent statements:
 
 ```java
 prefix = randomActions();
@@ -62,7 +62,7 @@ These statements are equivalent in that `(Ka,Va)` and `(Kb,Vb)` are in the hash 
 
 Remember that it is also possible to have an error in the implementation of the property rather than the class under test!
 
-Write an stateful PBT for the `edu.byu.cs329.hashtable.LLHashTable`. Be sure to include each approach: point-wise comparison and equivalent statements. 
+Write an stateful PBT for the `edu.byu.cs329.hashtable.LLHashMap` implementation of a map.  Be sure to include each approach: point-wise comparison and equivalent statements. **Report and fix** any defects found. You are not allowed to change the interface. Only fix defects. 
 
 ## Type Checking
 
