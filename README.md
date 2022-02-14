@@ -17,9 +17,9 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 ## MC/DC Coverage
 
-1) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDcTest.f`. Justify the final set of tests in the comments. Look it the `src/test` direction for the code to test. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition.
+1) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDc.problem1`. Justify the final set of tests in the comments. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition.
 
-2) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.MergeSortMcDcTest.sort`. Justify the final set of tests in the comments. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition (e.g., the if-statement in the loop). What makes this problem hard is finding the inputs to exercise the needed condition values for the if-statement in the loop. Find the needed condition values, then find the input to give those values.
+2) **(15 points)** Write a minimal number of tests to achieve MC/DC coverage for `edu.byu.cs329.mcdc.McDc.problem2`. Justify the final set of tests in the comments. Make clear in the comments how the test input gives MC/DC coverage including a table for any decisions with more than one condition (e.g., the if-statement in the loop). What makes this problem hard is finding the inputs to exercise the needed condition values for the if-statement in the loop. Find the needed condition values, then find the input to give those values.
 
 ## Stateless PBT
 
@@ -32,8 +32,8 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 Choose one class to test:
 
-  * [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in *edu.byu.cs329.pbt.stateless.BinarySearchTest*. 
-  * [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in *edu.byu.cs329.pbt.stateless.MergeSortTest*.
+  * [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in `edu.byu.cs329.pbt.stateless.BinarySearch`. 
+  * [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in `edu.byu.cs329.pbt.stateless.MergeSort`.
 
 ## Stateful PBT
 
@@ -62,12 +62,12 @@ These statements are equivalent in that `(Ka,Va)` and `(Kb,Vb)` are in the hash 
 
 Remember that it is also possible to have an error in the implementation of the property rather than the class under test!
 
-Write an stateful PBT for the `edu.byu.cs329.hashtable.LLHashMap` implementation of a map.  Be sure to include each approach: point-wise comparison and equivalent statements. **Report and fix** any defects found. You are not allowed to change the interface. Only fix defects. 
+Write an stateful PBT for the `edu.byu.cs329.pbt.stateful.LLHashMap` implementation of a map.  Be sure to include each approach: point-wise comparison and equivalent statements. **Report and fix** any defects found. You are not allowed to change the interface. Only fix defects. 
 
 ## Type Checking
 
-5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.hashtable.LlHashTable.get`. The proof should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
+5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.pbt.stateful.LlHashTable.get`. The proof should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
 
 ## Optional
 
-Practice writing type proofs for  `edu.byu.cs329.hashtable.LlHashTable.equals` and `edu.byu.cs329.hastable.LlHashTable.remove`. 
+Practice writing type proofs for  `edu.byu.cs329.pbt.stateful.LlHashTable.equals` and `edu.byu.cs329.pbt.stateful.LlHashTable.remove`. 
