@@ -1,7 +1,10 @@
-package edu.byu.cs329.hashtable;
+package edu.byu.cs329.pbt.stateful;
 
 import java.util.Arrays;
 
+/**
+ * Linked-List implementation of a hash-map.
+ */
 public class LlHashMap {
 
   private class HashEntry {
@@ -33,15 +36,15 @@ public class LlHashMap {
       if (other == null) {
         return false;
       }
-      
+
       if (!other.contains(key, value)) {
         return false;
       }
-      
+
       if (this.next != null) {
         return this.next.containedBy(other);
       }
-      
+
       return true;
     }
 
@@ -61,8 +64,8 @@ public class LlHashMap {
 
   /**
    * Constructor.
-   * 
-   * @param nrBuckets   Number of buckets to create
+   *
+   * @param nrBuckets Number of buckets to create
    * @throws IllegalArgumentException thrown if buckets not more than one
    */
   public LlHashMap(int nrBuckets) throws IllegalArgumentException {
@@ -93,9 +96,9 @@ public class LlHashMap {
 
   /**
    * Gets the value for a key from the table if it exists.
-   * 
-   * @param key   the key to search for
-   * @return
+   *
+   * @param key the key to search for
+   * @return (out: Integer) the value of the key, or null if not found.
    */
   public Integer get(int key) {
     HashEntry found = find(key);
@@ -108,7 +111,7 @@ public class LlHashMap {
 
   /**
    * Takes a key out of the table.
-   * 
+   *
    * @param key the key to remove
    */
   public void remove(int key) {
