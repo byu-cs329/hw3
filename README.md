@@ -11,7 +11,7 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
   * [whitebox.md](https://bitbucket.org/byucs329/byu-cs-329-lecture-notes/src/master/whitebox/white-box.md)
   * [Property based testing](https://bitbucket.org/byucs329/byu-cs-329-lecture-notes/src/master/property-based-testing/)
-  * [type-checking](https://bitbucket.org/byucs329/byu-cs-329-lecture-notes/src/master/type-checking.md)
+  * [type-checking](https://bitbucket.org/byucs329/byu-cs-329-lecture-notes/src/master/type-checking/type-checking.md)
 
 # Problems
 
@@ -32,7 +32,7 @@ See the following in the [lecture notes](https://bitbucket.org/byucs329/byu-cs-3
 
 Choose one class to test:
 
-  * [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in `edu.byu.cs329.pbt.stateless.BinarySearch`. 
+  * [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm): *O(ln n)* search for sorted array. The source is located in `edu.byu.cs329.pbt.stateless.BinarySearch`.
   * [Merge sort](https://en.wikipedia.org/wiki/Merge_sort): *O(n ln n)* algorithm to sort an input array. The source is located in `edu.byu.cs329.pbt.stateless.MergeSort`.
 
 ## Stateful PBT
@@ -62,12 +62,12 @@ These statements are equivalent in that `(Ka,Va)` and `(Kb,Vb)` are in the hash 
 
 Remember that it is also possible to have an error in the implementation of the property rather than the class under test!
 
-Write an stateful PBT for the `edu.byu.cs329.pbt.stateful.LLHashMap` implementation of a map.  Be sure to include each approach: point-wise comparison and equivalent statements. **Report and fix** any defects found. You are not allowed to change the interface. Only fix defects. 
+Write an stateful PBT for the `edu.byu.cs329.pbt.stateful.LLHashMap` implementation of a map.  Be sure to include each approach: point-wise comparison and equivalent statements. **Report and fix** any defects found. You are not allowed to change the interface. Only fix defects.
 
 ## Type Checking
 
-5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.pbt.stateful.LlHashTable.get`. The proof should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing. 
+5) **(10 points)** Write by hand a type proof for `edu.byu.cs329.pbt.stateful.LlHashTable.get`. The proof should be in the form of a tree in a file in the same directory as this *README*. Name each file by the problem number. Uploading a picture of your paper-pencil solution is fine (and preferred). Assume the existence of the environment that does the right thing.
 
 ## Optional
 
-Practice writing type proofs for  `edu.byu.cs329.pbt.stateful.LlHashTable.equals` and `edu.byu.cs329.pbt.stateful.LlHashTable.remove`. 
+Practice writing type proofs for  `edu.byu.cs329.pbt.stateful.LlHashTable.equals` and `edu.byu.cs329.pbt.stateful.LlHashTable.remove`.
